@@ -37,7 +37,46 @@ body {
     font-size: 2.2rem;
     font-weight: 400;
     width: 700px;
-    margin: auto;
+    margin: 30px auto;
+  }
+
+  input {
+    height: 50px;
+    width: 270px;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+
+    &:activate {
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    height: 50px;
+    width: 160px;
+    background: #222;
+    color: white;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      background: #111;
+      box-shadow: 0 0 20px rgb(0, 109, 73);
+    }
+  }
+
+  p {
+    font-size: 0.8rem;
+    width: 500px;
+    margin: 30px auto;
   }
 
   img {
