@@ -1,2 +1,2 @@
 # NotShopify
-A clone of the shopify.com/free-trial landing page
+A clone of the [shopify landing page](https://www.shopify.com/free-trial)
