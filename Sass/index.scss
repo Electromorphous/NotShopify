@@ -8,6 +8,7 @@
 }
 
 body {
+  position: relative;
   font-family: Roboto, sans-serif;
   text-align: center;
 }
@@ -16,6 +17,7 @@ body {
   padding: 30px 200px;
   background: #017a5c;
   color: white;
+  height: 800px;
 
   .logo {
     font-size: 1.7rem;
@@ -77,9 +79,31 @@ body {
     font-size: 0.8rem;
     width: 500px;
     margin: 30px auto;
+    font-weight: 300;
   }
 
   img {
-    width: 80%;
+    position: relative;
+    width: 85%;
+    z-index: 1;
+  }
+}
+
+.wave {
+  position: absolute;
+  top: 550px;
+  left: 0;
+}
+
+.section2 {
+  margin-top: 100px;
+
+  .icon {
+    img {
+      width: 100px;
+    }
+    i {
+      font-size: 100px;
+    }
   }
 }
