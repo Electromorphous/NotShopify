@@ -210,16 +210,13 @@ body {
 .foot-notes {
   margin-top: 10px;
   padding: 10px 150px;
-
+  background: $green;
+  color: white;
   text-align: left;
 
   a {
-    color: $green;
-    text-decoration: none;
-
-    &:visited {
-      color: $green;
-    }
+    color: white;
+    text-decoration: underline;
   }
 
   .right-side {

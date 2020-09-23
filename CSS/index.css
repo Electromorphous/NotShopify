@@ -242,16 +242,14 @@ body {
 .foot-notes {
   margin-top: 10px;
   padding: 10px 150px;
+  background: #007c5d;
+  color: white;
   text-align: left;
 }
 
 .foot-notes a {
-  color: #007c5d;
-  text-decoration: none;
-}
-
-.foot-notes a:visited {
-  color: #007c5d;
+  color: white;
+  text-decoration: underline;
 }
 
 .foot-notes .right-side {
