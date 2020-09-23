@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$green: #007c5d;
+
 *,
 :before,
 :after {
@@ -15,7 +18,7 @@ body {
 
 .section1 {
   padding: 30px 200px;
-  background: #017a5c;
+  background: $green;
   color: white;
   height: 800px;
 
@@ -47,6 +50,7 @@ body {
     width: 270px;
     padding: 20px;
     margin-right: 10px;
+    font-size: 1rem;
     border-radius: 5px;
     border: none;
 
@@ -55,6 +59,10 @@ body {
     }
     &:focus {
       outline: none;
+    }
+    &::placeholder {
+      color: #555;
+      letter-spacing: 1px;
     }
   }
 
@@ -66,12 +74,12 @@ body {
     font-size: 0.95rem;
     border: none;
     border-radius: 5px;
-    transition: all 0.4s;
+    transition: all 0.2s;
     cursor: pointer;
 
     &:hover {
       background: #111;
-      box-shadow: 0 0 20px rgb(0, 109, 73);
+      box-shadow: 0 5px 20px rgb(0, 109, 73);
     }
   }
 
@@ -96,14 +104,129 @@ body {
 }
 
 .section2 {
-  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 150px;
+  padding-bottom: 120px;
+  text-align: left;
 
-  .icon {
-    img {
-      width: 100px;
+  .feature {
+    margin: 20px;
+    width: 33.3333%;
+
+    .icon {
+      color: $green;
+      img {
+        width: 50px;
+      }
     }
-    i {
-      font-size: 100px;
+
+    h1 {
+      margin: 20px 0 10px 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+
+    p {
+      color: #777;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+}
+
+.section3 {
+  text-align: center;
+  margin: 0 150px;
+
+  hr {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+    margin: 50px auto;
+  }
+  .images {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  img {
+    width: 90px;
+  }
+}
+
+.section4 {
+  text-align: center;
+  margin: 100px 300px 60px 300px;
+  h1 {
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 2rem;
+  }
+  h2 {
+    color: #444;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  button {
+    height: 50px;
+    width: 160px;
+    margin: 50px;
+    background: $green;
+    color: white;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background: #004e3b;
+      box-shadow: 0 5px 20px #ccc;
+    }
+  }
+}
+
+.footer {
+  padding: 0 150px 10px 150px;
+
+  .links {
+    padding-right: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: right;
+
+    a {
+      color: $green;
+      padding: 5px;
+      text-decoration: none;
+    }
+  }
+}
+
+.foot-notes {
+  margin-top: 10px;
+  padding: 10px 150px;
+
+  text-align: left;
+
+  a {
+    color: $green;
+    text-decoration: none;
+
+    &:visited {
+      color: $green;
+    }
+  }
+
+  .right-side {
+    float: right;
+
+    a {
+      padding: 5px;
     }
   }
 }
