@@ -281,8 +281,8 @@ body {
   @media screen and (max-width: 685px) {
     height: 520px;
   }
-  @media screen and (max-width: 590px) {
-    top: 400px;
+  @media screen and (max-width: 485px) {
+    height: 600px;
   }
 }
 
@@ -308,6 +308,22 @@ body {
   }
   @media screen and (max-width: 500px) {
     top: 420px;
+  }
+
+  @media screen and (max-width: 485px) {
+    top: 500px;
+  }
+  @media screen and (max-width: 450px) {
+    top: 520px;
+  }
+  @media screen and (max-width: 365px) {
+    top: 530px;
+  }
+  @media screen and (max-width: 315px) {
+    top: 540px;
+  }
+  @media screen and (max-width: 272px) {
+    top: 550px;
   }
 }
 

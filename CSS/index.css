@@ -426,9 +426,9 @@ body {
   }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 485px) {
   .section1 {
-    top: 400px;
+    height: 600px;
   }
 }
 
@@ -471,6 +471,36 @@ body {
 @media screen and (max-width: 500px) {
   .wave {
     top: 420px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .wave {
+    top: 500px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wave {
+    top: 520px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .wave {
+    top: 530px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .wave {
+    top: 540px;
+  }
+}
+
+@media screen and (max-width: 272px) {
+  .wave {
+    top: 550px;
   }
 }
 
