@@ -45,41 +45,115 @@ body {
     margin: 30px auto;
   }
 
-  input {
-    height: 50px;
-    width: 270px;
-    padding: 20px;
-    margin-right: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &:activate {
-      outline: none;
-    }
-    &:focus {
-      outline: none;
-    }
-    &::placeholder {
-      color: #555;
-      letter-spacing: 1px;
-    }
-  }
+    .text-input-div.inactive {
+      position: relative;
 
-  button {
-    height: 50px;
-    width: 160px;
-    background: #222;
-    color: white;
-    font-size: 0.95rem;
-    border: none;
-    border-radius: 5px;
-    transition: all 0.2s;
-    cursor: pointer;
+      .email {
+        position: absolute;
+        color: #444;
+        font-size: 0.75rem;
+        left: 20px;
 
-    &:hover {
-      background: #111;
-      box-shadow: 0 5px 20px rgb(0, 109, 73);
+        top: 13px; // part of the animation
+        opacity: 0;
+        transition: all 0.2s;
+      }
+
+      input {
+        height: 50px;
+        width: 270px;
+        padding: 20px;
+        margin-right: 10px;
+        font-size: 0.9rem;
+        border-radius: 5px;
+        border: none;
+
+        &:activate {
+          outline: none;
+        }
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          position: absolute;
+          left: 20px;
+          color: #555;
+          font-size: 1rem;
+          letter-spacing: 1px;
+        }
+        &::value {
+          color: red;
+        }
+
+        transition: all 0.2s;
+      }
+    }
+
+    .text-input-div.active {
+      position: relative;
+
+      .email {
+        position: absolute;
+        color: #444;
+        font-size: 0.75rem;
+        left: 20px;
+
+        top: 10px; // part of the animation
+        opacity: 100%;
+        transition: all 0.2s;
+      }
+
+      input {
+        height: 50px;
+        width: 270px;
+        padding: 20px;
+        margin-right: 10px;
+        font-size: 0.9rem;
+        border-radius: 5px;
+        border: none;
+
+        &:activate {
+          outline: none;
+        }
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          position: absolute;
+          left: 20px;
+          color: #555;
+          font-size: 1rem;
+          letter-spacing: 1px;
+        }
+        &::value {
+          color: red;
+        }
+
+        padding-bottom: 5px; // part of the animation
+        transition: all 0.2s;
+      }
+    }
+
+    button {
+      height: 50px;
+      width: 160px;
+      background: #222;
+      color: white;
+      font-size: 0.95rem;
+      border: none;
+      border-radius: 5px;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background: #111;
+        box-shadow: 0 5px 20px rgb(0, 109, 73);
+      }
     }
   }
 

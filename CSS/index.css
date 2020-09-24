@@ -44,45 +44,162 @@ body {
   margin: 30px auto;
 }
 
-.section1 input {
+.section1 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section1 form .text-input-div.inactive {
+  position: relative;
+}
+
+.section1 form .text-input-div.inactive .email {
+  position: absolute;
+  color: #444;
+  font-size: 0.75rem;
+  left: 20px;
+  top: 13px;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.section1 form .text-input-div.inactive input {
   height: 50px;
   width: 270px;
   padding: 20px;
   margin-right: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-radius: 5px;
   border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.section1 input:activate {
+.section1 form .text-input-div.inactive input:activate {
   outline: none;
 }
 
-.section1 input:focus {
+.section1 form .text-input-div.inactive input:focus {
   outline: none;
 }
 
-.section1 input::-webkit-input-placeholder {
+.section1 form .text-input-div.inactive input::-webkit-input-placeholder {
+  position: absolute;
+  left: 20px;
   color: #555;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
-.section1 input:-ms-input-placeholder {
+.section1 form .text-input-div.inactive input:-ms-input-placeholder {
+  position: absolute;
+  left: 20px;
   color: #555;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
-.section1 input::-ms-input-placeholder {
+.section1 form .text-input-div.inactive input::-ms-input-placeholder {
+  position: absolute;
+  left: 20px;
   color: #555;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
-.section1 input::placeholder {
+.section1 form .text-input-div.inactive input::placeholder {
+  position: absolute;
+  left: 20px;
   color: #555;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
-.section1 button {
+.section1 form .text-input-div.inactive input::value {
+  color: red;
+}
+
+.section1 form .text-input-div.active {
+  position: relative;
+}
+
+.section1 form .text-input-div.active .email {
+  position: absolute;
+  color: #444;
+  font-size: 0.75rem;
+  left: 20px;
+  top: 10px;
+  opacity: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.section1 form .text-input-div.active input {
+  height: 50px;
+  width: 270px;
+  padding: 20px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  padding-bottom: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.section1 form .text-input-div.active input:activate {
+  outline: none;
+}
+
+.section1 form .text-input-div.active input:focus {
+  outline: none;
+}
+
+.section1 form .text-input-div.active input::-webkit-input-placeholder {
+  position: absolute;
+  left: 20px;
+  color: #555;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.section1 form .text-input-div.active input:-ms-input-placeholder {
+  position: absolute;
+  left: 20px;
+  color: #555;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.section1 form .text-input-div.active input::-ms-input-placeholder {
+  position: absolute;
+  left: 20px;
+  color: #555;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.section1 form .text-input-div.active input::placeholder {
+  position: absolute;
+  left: 20px;
+  color: #555;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.section1 form .text-input-div.active input::value {
+  color: red;
+}
+
+.section1 form button {
   height: 50px;
   width: 160px;
   background: #222;
@@ -95,7 +212,7 @@ body {
   cursor: pointer;
 }
 
-.section1 button:hover {
+.section1 form button:hover {
   background: #111;
   -webkit-box-shadow: 0 5px 20px #006d49;
           box-shadow: 0 5px 20px #006d49;
