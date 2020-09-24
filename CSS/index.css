@@ -100,14 +100,14 @@ body {
 
 .section1 form .text-input-div.inactive {
   position: relative;
-  width: 80%;
+  width: 400px;
 }
 
 .section1 form .text-input-div.inactive .email {
   position: absolute;
   color: #333;
   font-size: 0.7rem;
-  left: 42px;
+  left: 45px;
   font-weight: 300;
   top: 13px;
   opacity: 0;
@@ -117,13 +117,19 @@ body {
 
 @media screen and (max-width: 1080px) {
   .section1 form .text-input-div.inactive .email {
-    left: 10.5%;
+    left: 40px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 650px) {
   .section1 form .text-input-div.inactive .email {
-    left: 12%;
+    left: 11.25%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .section1 form .text-input-div.inactive .email {
+    left: 20px;
   }
 }
 
@@ -198,16 +204,28 @@ body {
   }
 }
 
+@media screen and (max-width: 485px) {
+  .section1 form .text-input-div.inactive input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .section1 form .text-input-div.inactive {
+    width: 100%;
+  }
+}
+
 .section1 form .text-input-div.active {
   position: relative;
-  width: 45%;
+  width: 400px;
 }
 
 .section1 form .text-input-div.active .email {
   position: absolute;
   color: #333;
   font-size: 0.7rem;
-  left: 42px;
+  left: 45px;
   font-weight: 300;
   top: 10px;
   opacity: 100%;
@@ -217,13 +235,19 @@ body {
 
 @media screen and (max-width: 1080px) {
   .section1 form .text-input-div.active .email {
-    left: 10.5%;
+    left: 40px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 650px) {
   .section1 form .text-input-div.active .email {
-    left: 12%;
+    left: 11.25%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .section1 form .text-input-div.active .email {
+    left: 20px;
   }
 }
 
@@ -299,6 +323,18 @@ body {
   }
 }
 
+@media screen and (max-width: 485px) {
+  .section1 form .text-input-div.active input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .section1 form .text-input-div.active {
+    width: 100%;
+  }
+}
+
 .section1 form button {
   height: 50px;
   width: 160px;
@@ -318,10 +354,25 @@ body {
           box-shadow: 0 5px 20px #006d49;
 }
 
+@media screen and (max-width: 485px) {
+  .section1 form button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
 @media screen and (min-width: 1080px) {
   .section1 form {
-    width: 700px;
+    width: 450px;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .section1 form {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
