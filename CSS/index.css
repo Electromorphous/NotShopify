@@ -15,7 +15,7 @@ body {
 }
 
 .section1 {
-  padding: 40px 200px 30px 200px;
+  padding: 40px 10% 30px 10%;
   background: #007c5d;
   color: white;
   height: 800px;
@@ -31,10 +31,28 @@ body {
   width: 30px;
 }
 
+@media screen and (max-width: 1080px) {
+  .section1 .logo {
+    font-size: 1.5rem;
+  }
+}
+
 .section1 h1 {
   font-size: 3.7rem;
   font-weight: 500;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+  .section1 h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section1 h1 {
+    font-size: 1.8rem;
+  }
 }
 
 .section1 h2 {
@@ -42,6 +60,19 @@ body {
   font-weight: 400;
   width: 700px;
   margin: 30px auto;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 1080px) {
+  .section1 h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section1 h2 {
+    width: 100%;
+  }
 }
 
 .section1 form {
@@ -58,6 +89,7 @@ body {
 
 .section1 form .text-input-div.inactive {
   position: relative;
+  width: 45%;
 }
 
 .section1 form .text-input-div.inactive .email {
@@ -68,21 +100,18 @@ body {
   font-weight: 300;
   top: 13px;
   opacity: 0;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
 }
 
 .section1 form .text-input-div.inactive input {
   height: 50px;
   width: 270px;
   padding: 20px;
-  margin-right: 10px;
   font-size: 1.1rem;
   font-weight: 400;
   border-radius: 5px;
   border: none;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
 }
 
 .section1 form .text-input-div.inactive input:activate {
@@ -125,12 +154,15 @@ body {
   letter-spacing: 1px;
 }
 
-.section1 form .text-input-div.inactive input::value {
-  color: red;
+@media screen and (max-width: 1080px) {
+  .section1 form .text-input-div.inactive input {
+    width: 90%;
+  }
 }
 
 .section1 form .text-input-div.active {
   position: relative;
+  width: 45%;
 }
 
 .section1 form .text-input-div.active .email {
@@ -141,22 +173,19 @@ body {
   font-weight: 300;
   top: 10px;
   opacity: 100%;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
 }
 
 .section1 form .text-input-div.active input {
   height: 50px;
   width: 270px;
   padding: 20px;
-  margin-right: 10px;
   font-size: 1.1rem;
   font-weight: 400;
   border-radius: 5px;
   border: none;
   padding-bottom: 5px;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
 }
 
 .section1 form .text-input-div.active input:activate {
@@ -199,8 +228,10 @@ body {
   letter-spacing: 1px;
 }
 
-.section1 form .text-input-div.active input::value {
-  color: red;
+@media screen and (max-width: 1080px) {
+  .section1 form .text-input-div.active input {
+    width: 90%;
+  }
 }
 
 .section1 form button {
@@ -229,16 +260,52 @@ body {
   font-weight: 300;
 }
 
+@media screen and (max-width: 900px) {
+  .section1 p {
+    font-size: 0.7rem;
+  }
+}
+
 .section1 img {
   position: relative;
-  width: 85%;
+  width: 80%;
   z-index: 1;
+}
+
+@media screen and (max-width: 1080px) {
+  .section1 {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section1 {
+    height: 600px;
+  }
 }
 
 .wave {
   position: absolute;
-  top: 550px;
+  top: 600px;
   left: 0;
+}
+
+@media screen and (max-width: 1080px) {
+  .wave {
+    top: 500px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wave {
+    top: 420px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .wave {
+    top: 450px;
+  }
 }
 
 .section2 {
@@ -247,8 +314,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 150px;
-  padding-bottom: 120px;
+  padding: 150px 7% 120px 7%;
   text-align: left;
 }
 
@@ -278,6 +344,18 @@ body {
   line-height: 25px;
 }
 
+@media screen and (max-width: 1080px) {
+  .section2 {
+    padding: 150px 15% 90px 15%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section2 {
+    padding: 120px 10% 50px 10%;
+  }
+}
+
 .section3 {
   text-align: center;
   margin: 0 150px;
@@ -304,9 +382,29 @@ body {
   width: 90px;
 }
 
+@media screen and (max-width: 1080px) {
+  .section3 img {
+    margin: 20px 20px;
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section3 img {
+    margin: 15px 15px;
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section3 {
+    margin: 0 5%;
+  }
+}
+
 .section4 {
   text-align: center;
-  margin: 100px 300px 60px 300px;
+  margin: 100px 25% 60px 25%;
 }
 
 .section4 h1 {
@@ -314,6 +412,12 @@ body {
   font-weight: 400;
   margin-bottom: 30px;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 1080px) {
+  .section4 h1 {
+    font-size: 1.2rem;
+  }
 }
 
 .section4 h2 {
@@ -343,6 +447,18 @@ body {
           box-shadow: 0 5px 20px #ccc;
 }
 
+@media screen and (max-width: 1080px) {
+  .section4 {
+    margin: 100px 25% 60px 25%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section4 {
+    margin: 90px 20% 60px 20%;
+  }
+}
+
 .footer {
   padding: 0 150px 10px 150px;
 }
@@ -358,6 +474,12 @@ body {
   color: #007c5d;
   padding: 5px;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .footer {
+    padding: 0 100px 10px 100px;
+  }
 }
 
 .foot-notes {
@@ -384,4 +506,18 @@ body {
 
 .foot-notes .right-side a {
   padding: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+  .foot-notes {
+    font-size: 0.8rem;
+    padding: 7px 10%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .foot-notes {
+    font-size: 0.7rem;
+    padding: 5px 10%;
+  }
 }
