@@ -27,8 +27,8 @@ body {
   font-style: italic;
 }
 
-.section1 .logo i {
-  margin-right: 5px;
+.section1 .logo img {
+  width: 30px;
 }
 
 .section1 h1 {
