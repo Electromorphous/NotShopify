@@ -29,10 +29,17 @@ body {
 
     img {
       width: 30px;
+
+      @media screen and (max-width: 750px) {
+        width: 25px;
+      }
     }
 
     @media screen and (max-width: 1080px) {
       font-size: 1.5rem;
+    }
+    @media screen and (max-width: 750px) {
+      font-size: 1.4rem;
     }
   }
 
@@ -55,8 +62,6 @@ body {
     width: 700px;
     margin: 30px auto;
 
-    border: 2px solid black;
-
     @media screen and (max-width: 1080px) {
       font-size: 1.5rem;
     }
@@ -73,25 +78,33 @@ body {
 
     .text-input-div.inactive {
       position: relative;
-      width: 45%;
+      width: 80%;
+
+      // border: 2px solid red;
 
       .email {
         position: absolute;
-        color: #555;
-        font-size: 0.75rem;
-        left: 20px;
+        color: #333;
+        font-size: 0.7rem;
+        left: 42px;
         font-weight: 300;
 
         top: 13px; // part of the animation
         opacity: 0;
         transition: all 0.15s;
+
+        @media screen and (max-width: 1080px) {
+          left: 10.5%;
+        }
+        @media screen and (max-width: 900px) {
+          left: 12%;
+        }
       }
 
       input {
         height: 50px;
         width: 270px;
         padding: 20px;
-        // margin-right: 10px;
         font-size: 1.1rem;
         font-weight: 400;
         border-radius: 5px;
@@ -109,6 +122,10 @@ body {
           color: #555;
           font-size: 1rem;
           letter-spacing: 1px;
+
+          @media screen and (max-width: 750px) {
+            letter-spacing: 0;
+          }
         }
 
         @media screen and (max-width: 1080px) {
@@ -123,21 +140,27 @@ body {
 
       .email {
         position: absolute;
-        color: #555;
-        font-size: 0.75rem;
-        left: 20px;
+        color: #333;
+        font-size: 0.7rem;
+        left: 42px;
         font-weight: 300;
 
         top: 10px; // part of the animation
         opacity: 100%;
         transition: all 0.15s;
+
+        @media screen and (max-width: 1080px) {
+          left: 10.5%;
+        }
+        @media screen and (max-width: 900px) {
+          left: 12%;
+        }
       }
 
       input {
         height: 50px;
         width: 270px;
         padding: 20px;
-        // margin-right: 10px;
         font-size: 1.1rem;
         font-weight: 400;
         border-radius: 5px;
@@ -155,6 +178,10 @@ body {
           color: #555;
           font-size: 1rem;
           letter-spacing: 1px;
+
+          @media screen and (max-width: 750px) {
+            letter-spacing: 0;
+          }
         }
 
         padding-bottom: 5px; // part of the animation
@@ -181,11 +208,16 @@ body {
         box-shadow: 0 5px 20px rgb(0, 109, 73);
       }
     }
+
+    @media screen and (min-width: 1080px) {
+      width: 700px;
+      margin: auto;
+    }
   }
 
   p {
     font-size: 0.8rem;
-    width: 500px;
+    width: 100%;
     margin: 30px auto;
     font-weight: 300;
 
@@ -198,6 +230,10 @@ body {
     position: relative;
     width: 80%;
     z-index: 1;
+
+    @media screen and (max-width: 485px) {
+      width: 100%;
+    }
   }
 
   @media screen and (max-width: 1080px) {
@@ -206,6 +242,16 @@ body {
 
   @media screen and (max-width: 900px) {
     height: 600px;
+  }
+  @media screen and (max-width: 750px) {
+    padding: 30px 10% 30px 10%;
+    height: 550px;
+  }
+  @media screen and (max-width: 685px) {
+    height: 520px;
+  }
+  @media screen and (max-width: 590px) {
+    top: 400px;
   }
 }
 
@@ -217,13 +263,20 @@ body {
   @media screen and (max-width: 1080px) {
     top: 500px;
   }
-
   @media screen and (max-width: 900px) {
     top: 420px;
   }
-
   @media screen and (max-width: 810px) {
     top: 450px;
+  }
+  @media screen and (max-width: 750px) {
+    top: 400px;
+  }
+  @media screen and (max-width: 545px) {
+    top: 410px;
+  }
+  @media screen and (max-width: 500px) {
+    top: 420px;
   }
 }
 
@@ -256,6 +309,10 @@ body {
       font-weight: 400;
       line-height: 25px;
     }
+
+    @media screen and (max-width: 750px) {
+      width: 100%;
+    }
   }
 
   @media screen and (max-width: 1080px) {
@@ -264,6 +321,11 @@ body {
 
   @media screen and (max-width: 900px) {
     padding: 120px 10% 50px 10%;
+  }
+
+  @media screen and (max-width: 750px) {
+    flex-wrap: wrap;
+    padding: 100px 3% 30px 3%;
   }
 }
 
@@ -275,6 +337,10 @@ body {
     border-top: 1px solid #ddd;
     border-bottom: none;
     margin: 50px auto;
+
+    @media screen and (max-width: 750px) {
+      margin: 20px auto;
+    }
   }
   .images {
     display: flex;
@@ -292,6 +358,11 @@ body {
 
     @media screen and (max-width: 800px) {
       margin: 15px 15px;
+      width: 110px;
+    }
+
+    @media screen and (max-width: 750px) {
+      margin: 15px 30px;
       width: 110px;
     }
   }
@@ -345,6 +416,9 @@ body {
   @media screen and (max-width: 900px) {
     margin: 90px 20% 60px 20%;
   }
+  @media screen and (max-width: 750px) {
+    margin: 90px 10% 20px 10%;
+  }
 }
 
 .footer {
@@ -360,10 +434,28 @@ body {
       color: $green;
       padding: 5px;
       text-decoration: none;
+
+      @media screen and (max-width: 750px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      text-align: center;
+      line-height: 25px;
+      width: 150px;
     }
   }
   @media screen and (max-width: 1080px) {
     padding: 0 100px 10px 100px;
+  }
+  @media screen and (max-width: 750px) {
+    margin: 90px 20% 60px 20%;
+  }
+  @media screen and (max-width: 750px) {
+    margin: 0 auto;
+    padding: 0;
+    width: 150px;
   }
 }
 
@@ -376,11 +468,21 @@ body {
 
   p {
     padding: 2px 0;
+
+    @media screen and (max-width: 570px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   a {
     color: white;
     text-decoration: bold;
+
+    @media screen and (max-width: 570px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .right-side {
@@ -388,6 +490,12 @@ body {
 
     a {
       padding: 5px;
+    }
+
+    @media screen and (max-width: 570px) {
+      width: 100%;
+      text-align: center;
+      margin: 5px 0;
     }
   }
 
@@ -398,5 +506,8 @@ body {
   @media screen and (max-width: 900px) {
     font-size: 0.7rem;
     padding: 5px 10%;
+  }
+  @media screen and (max-width: 750px) {
+    padding: 4px 5%;
   }
 }
