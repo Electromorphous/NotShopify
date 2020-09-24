@@ -214,9 +214,13 @@ body {
   color: white;
   text-align: left;
 
+  p {
+    padding: 2px 0;
+  }
+
   a {
     color: white;
-    text-decoration: underline;
+    text-decoration: bold;
   }
 
   .right-side {

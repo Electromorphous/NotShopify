@@ -247,9 +247,14 @@ body {
   text-align: left;
 }
 
+.foot-notes p {
+  padding: 2px 0;
+}
+
 .foot-notes a {
   color: white;
-  text-decoration: underline;
+  -webkit-text-decoration: bold;
+          text-decoration: bold;
 }
 
 .foot-notes .right-side {
