@@ -109,8 +109,6 @@ body {
   font-size: 0.7rem;
   left: 45px;
   font-weight: 300;
-  top: 13px;
-  opacity: 0;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
@@ -216,6 +214,11 @@ body {
   }
 }
 
+.section1 form .text-input-div.inactive .email {
+  top: 13px;
+  opacity: 0;
+}
+
 .section1 form .text-input-div.active {
   position: relative;
   width: 400px;
@@ -227,8 +230,6 @@ body {
   font-size: 0.7rem;
   left: 45px;
   font-weight: 300;
-  top: 10px;
-  opacity: 100%;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
 }
@@ -259,7 +260,6 @@ body {
   font-weight: 400;
   border-radius: 5px;
   border: none;
-  padding-bottom: 5px;
 }
 
 .section1 form .text-input-div.active input:activate {
@@ -333,6 +333,15 @@ body {
   .section1 form .text-input-div.active {
     width: 100%;
   }
+}
+
+.section1 form .text-input-div.active .email {
+  top: 10px;
+  opacity: 100%;
+}
+
+.section1 form .text-input-div.active input {
+  padding-bottom: 5px;
 }
 
 .section1 form button {

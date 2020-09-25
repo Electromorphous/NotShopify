@@ -1,5 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@mixin textInputDiv {
+  position: relative;
+  width: 400px;
+
+  .email {
+    position: absolute;
+    color: #333;
+    font-size: 0.7rem;
+    left: 45px;
+    font-weight: 300;
+    transition: all 0.15s;
+
+    @media screen and (max-width: 1080px) {
+      left: 40px;
+    }
+
+    @media screen and (max-width: 650px) {
+      left: 11.25%;
+    }
+
+    @media screen and (max-width: 485px) {
+      left: 20px;
+    }
+  }
+
+  input {
+    height: 50px;
+    width: 270px;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+
+    &:activate {
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      position: absolute;
+      left: 20px;
+      color: #555;
+      font-size: 1rem;
+      letter-spacing: 1px;
+
+      @media screen and (max-width: 750px) {
+        letter-spacing: 0;
+      }
+    }
+
+    @media screen and (max-width: 1080px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 485px) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 485px) {
+    width: 100%;
+  }
+}
+
 $green: #007c5d;
 
 *,
@@ -77,140 +143,24 @@ body {
     align-items: center;
 
     .text-input-div.inactive {
-      position: relative;
-      width: 400px;
+      @include textInputDiv();
 
       .email {
-        position: absolute;
-        color: #333;
-        font-size: 0.7rem;
-        left: 45px;
-        font-weight: 300;
-
-        top: 13px; // part of the animation
+        top: 13px;
         opacity: 0;
-        transition: all 0.15s;
-
-        @media screen and (max-width: 1080px) {
-          left: 40px;
-        }
-
-        @media screen and (max-width: 650px) {
-          left: 11.25%;
-        }
-
-        @media screen and (max-width: 485px) {
-          left: 20px;
-        }
-      }
-
-      input {
-        height: 50px;
-        width: 270px;
-        padding: 20px;
-        font-size: 1.1rem;
-        font-weight: 400;
-        border-radius: 5px;
-        border: none;
-
-        &:activate {
-          outline: none;
-        }
-        &:focus {
-          outline: none;
-        }
-        &::placeholder {
-          position: absolute;
-          left: 20px;
-          color: #555;
-          font-size: 1rem;
-          letter-spacing: 1px;
-
-          @media screen and (max-width: 750px) {
-            letter-spacing: 0;
-          }
-        }
-
-        @media screen and (max-width: 1080px) {
-          width: 90%;
-        }
-
-        @media screen and (max-width: 485px) {
-          width: 100%;
-        }
-      }
-
-      @media screen and (max-width: 485px) {
-        width: 100%;
       }
     }
 
     .text-input-div.active {
-      position: relative;
-      width: 400px;
+      @include textInputDiv();
 
       .email {
-        position: absolute;
-        color: #333;
-        font-size: 0.7rem;
-        left: 45px;
-        font-weight: 300;
-
-        top: 10px; // part of the animation
+        top: 10px;
         opacity: 100%;
-        transition: all 0.15s;
-
-        @media screen and (max-width: 1080px) {
-          left: 40px;
-        }
-        @media screen and (max-width: 650px) {
-          left: 11.25%;
-        }
-        @media screen and (max-width: 485px) {
-          left: 20px;
-        }
       }
 
       input {
-        height: 50px;
-        width: 270px;
-        padding: 20px;
-        font-size: 1.1rem;
-        font-weight: 400;
-        border-radius: 5px;
-        border: none;
-
-        &:activate {
-          outline: none;
-        }
-        &:focus {
-          outline: none;
-        }
-        &::placeholder {
-          position: absolute;
-          left: 20px;
-          color: #555;
-          font-size: 1rem;
-          letter-spacing: 1px;
-
-          @media screen and (max-width: 750px) {
-            letter-spacing: 0;
-          }
-        }
-
-        padding-bottom: 5px; // part of the animation
-
-        @media screen and (max-width: 1080px) {
-          width: 90%;
-        }
-
-        @media screen and (max-width: 485px) {
-          width: 100%;
-        }
-      }
-
-      @media screen and (max-width: 485px) {
-        width: 100%;
+        padding-bottom: 5px;
       }
     }
 
