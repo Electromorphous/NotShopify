@@ -238,42 +238,41 @@ body {
 
 .wave {
   position: absolute;
-  top: 560px;
+  top: 570px;
   left: 0;
 
   @media screen and (max-width: 1080px) {
-    top: 500px;
+    top: 510px;
   }
   @media screen and (max-width: 900px) {
-    top: 420px;
+    top: 430px;
   }
   @media screen and (max-width: 810px) {
-    top: 450px;
+    top: 460px;
   }
   @media screen and (max-width: 750px) {
-    top: 400px;
-  }
-  @media screen and (max-width: 545px) {
     top: 410px;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 545px) {
     top: 420px;
   }
-
+  @media screen and (max-width: 500px) {
+    top: 430px;
+  }
   @media screen and (max-width: 485px) {
-    top: 500px;
+    top: 510px;
   }
   @media screen and (max-width: 450px) {
-    top: 520px;
-  }
-  @media screen and (max-width: 365px) {
     top: 530px;
   }
-  @media screen and (max-width: 315px) {
+  @media screen and (max-width: 365px) {
     top: 540px;
   }
-  @media screen and (max-width: 272px) {
+  @media screen and (max-width: 315px) {
     top: 550px;
+  }
+  @media screen and (max-width: 272px) {
+    top: 560px;
   }
 }
 

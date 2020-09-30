@@ -443,73 +443,73 @@ body {
 
 .wave {
   position: absolute;
-  top: 560px;
+  top: 570px;
   left: 0;
 }
 
 @media screen and (max-width: 1080px) {
   .wave {
-    top: 500px;
+    top: 510px;
   }
 }
 
 @media screen and (max-width: 900px) {
   .wave {
-    top: 420px;
+    top: 430px;
   }
 }
 
 @media screen and (max-width: 810px) {
   .wave {
-    top: 450px;
+    top: 460px;
   }
 }
 
 @media screen and (max-width: 750px) {
   .wave {
-    top: 400px;
+    top: 410px;
   }
 }
 
 @media screen and (max-width: 545px) {
   .wave {
-    top: 410px;
+    top: 420px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .wave {
-    top: 420px;
+    top: 430px;
   }
 }
 
 @media screen and (max-width: 485px) {
   .wave {
-    top: 500px;
+    top: 510px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .wave {
-    top: 520px;
+    top: 530px;
   }
 }
 
 @media screen and (max-width: 365px) {
   .wave {
-    top: 530px;
+    top: 540px;
   }
 }
 
 @media screen and (max-width: 315px) {
   .wave {
-    top: 540px;
+    top: 550px;
   }
 }
 
 @media screen and (max-width: 272px) {
   .wave {
-    top: 550px;
+    top: 560px;
   }
 }
 
